@@ -1,4 +1,4 @@
-# ArchTitus Installer Script
+# VictoryArch Installer Script
 
 <img src="https://i.imgur.com/YiNMnan.png" />
 
@@ -10,9 +10,9 @@ From initial Prompt type the following commands:
 
 ```
 pacman -Sy git
-git clone https://github.com/ChrisTitusTech/ArchTitus
-cd ArchTitus
-./archtitus.sh
+git clone https://github.com/ChrisTitusTech/VictoryArch
+cd VictoryArch
+./VictoryArch.sh
 ```
 
 ### System Description
