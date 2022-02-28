@@ -174,8 +174,8 @@ if [ $(whoami) = "root"  ];
 then
     useradd -m -G wheel,libvirt -s /bin/bash $username 
 	passwd $username
-	cp -R /root/VictoryArch-Post /home/$username/
-    chown -R $username: /home/$username/VictoryArch-Post
+	cp -R /root/VictoryArch /home/$username/
+    chown -R $username: /home/$username/VictoryArch
 	read -p "Please name your machine:" nameofmachine
 	echo $nameofmachine > /etc/hostname
 else
@@ -197,13 +197,6 @@ pacman -Sy --noconfirm
 echo -e "\nInstalling Base System\n"
 
 PKGS=(
-'mesa' # Essential Xorg First
-'xorg'
-'xorg-server'
-'xorg-apps'
-'xorg-drivers'
-'xorg-xkill'
-'xorg-xinit'
 'alacarte'
 'ark' # compression
 'autoconf' # build
@@ -350,7 +343,6 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerleve
 'github-desktop-bin' # Github Desktop sync
 'gnome-shell-extension-blur-my-shell-git'
 'gnome-shell-extension-impatience-git'
-'gnome-shell-extension-task-icons-git'
 'gnome-shell-extension-no-annoyance-git'
 'gnome-shell-extension-dash-to-dock-git'
 'gnome-shell-extension-tiling-assistant'
@@ -409,7 +401,7 @@ check_exit_status
 
 #GRUB
 function grub() {
-cd $HOME/VictoryArch-Post/grub/
+cd $HOME/VictoryArch/grub/
 sudo ./install.sh
 
 check_exit_status
@@ -418,9 +410,9 @@ check_exit_status
 #CONFIGS
 function configs() {
 export PATH=$PATH:~/.local/bin
-cp -r $HOME/VictoryArch-Post/configs/* $HOME/.config/
+cp -r $HOME/VictoryArch/configs/* $HOME/.config/
 echo
-sudo mv -f $HOME/VictoryArch-Post/configs/pacman.conf /etc/
+sudo mv -f $HOME/VictoryArch/configs/pacman.conf /etc/
 echo
 mv $HOME/.config/bashrc $HOME/.config/.bashrc
 mv $HOME/.config/.bashrc $HOME
@@ -435,7 +427,7 @@ check_exit_status
 
 #APPEARANCE
 function appearance() {
-cd cd $HOME/VictoryArch-Post/
+cd cd $HOME/VictoryArch/
 git clone https://github.com/daniruiz/flat-remix
 git clone https://github.com/daniruiz/flat-remix-gtk
 #mkdir -p ~/.icons && mkdir -p ~/.themes
@@ -446,7 +438,7 @@ rm -rf ~/flat-remix flat-remix-gtk
 gsettings set org.gnome.desktop.interface gtk-theme "Flat-Remix-GTK-Blue-Dark"
 gsettings set org.gnome.desktop.interface icon-theme "Flat-Remix-Blue-Dark"
 echo
-gsettings set org.gnome.shell favorite-apps "['brave-browser.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'terminator.desktop', 'com.simplenote.Simplenote.desktop', 'virtualbox.desktop', 'com.visualstudio.code.desktop', 'onboard.desktop']"
+gsettings set org.gnome.shell favorite-apps "['brave-browser.desktop', 'firefox.desktop', 'org.gnome.Nautilus.desktop', 'terminator.desktop', 'com.simplenote.Simplenote.desktop', 'virtualbox.desktop', 'com.vscodium.codium.desktop', 'onboard.desktop']"
 gsettings set org.gnome.desktop.wm.preferences button-layout ":minimize,maximize,close"
 gsettings set org.gnome.desktop.interface clock-format '12h'   
 gsettings set org.gnome.desktop.interface cursor-theme 'Breeze'
