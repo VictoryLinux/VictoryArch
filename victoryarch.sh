@@ -383,6 +383,7 @@ done
 # Install Flatpaks
 function flatpaks() {
 	sudo flatpak install flathub com.simplenote.Simplenote -y
+	sudo flatpak install flathub com.vscodium.codium -y
     sudo flatpak install flathub com.mattjakeman.ExtensionManager -y
     sudo flatpak install flathub com.discordapp.Discord -y
     sudo flatpak install flathub com.bitwarden.desktop -y
@@ -492,7 +493,7 @@ packages
 aur
 flatpaks
 wallpaper
-grub
+#grub
 configs
 appearance
 extensions
