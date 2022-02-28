@@ -261,7 +261,6 @@ PKGS=(
 'make'
 'milou'
 'mtools'
-'mono'
 'nano'
 'neofetch'
 'networkmanager'
