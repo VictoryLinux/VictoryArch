@@ -14,6 +14,8 @@ git clone https://github.com/VictoryLinux/VictoryArch
 cd VictoryArch
 ./arch.sh
 
+choose Minimal Install
+
 reboot
 
 enter tty
