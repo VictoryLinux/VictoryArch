@@ -427,7 +427,7 @@ check_exit_status
 
 #APPEARANCE
 function appearance() {
-cd cd $HOME/VictoryArch/
+cd $HOME/VictoryArch/
 git clone https://github.com/daniruiz/flat-remix
 git clone https://github.com/daniruiz/flat-remix-gtk
 #mkdir -p ~/.icons && mkdir -p ~/.themes
