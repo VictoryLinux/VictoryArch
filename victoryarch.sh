@@ -513,9 +513,9 @@ packages
 aur
 flatpaks
 wallpaper
-#grub
-configs
+grub
 plymouth
+configs
 appearance
 extensions
 leave
