@@ -10,13 +10,20 @@ From initial Prompt type the following commands:
 
 ```
 pacman -Sy git
-git clone https://github.com/ChrisTitusTech/VictoryArch
+git clone https://github.com/VictoryLinux/VictoryArch
 cd VictoryArch
-./VictoryArch.sh
+./arch.sh
+
+reboot
+
+enter tty
+
+cd VictoryArch
+./victoryarch.sh 
 ```
 
 ### System Description
-This is completely automated arch install of the KDE desktop environment on arch using all the packages I use on a daily basis. 
+This is completely automated arch install of arch using all the packages I use on a daily basis. 
 
 ## Troubleshooting
 
@@ -40,6 +47,8 @@ After unblocking the WiFi, you can connect to it. Go through these 5 steps:
 #5: Find your network, and run `station [device name] connect [network name]`, enter your password and run `exit`. You can test if you have internet connection by running `ping google.com`, and then Press Ctrl and C to stop the ping test.
 
 ## Credits
-
+- Forked from ArchTitus from ChrisTitusTech https://github.com/ChrisTitusTech/ArchTitus
 - Original packages script was a post install cleanup script called ArchMatic located here: https://github.com/rickellis/ArchMatic
 - Thank you to all the folks that helped during the creation from YouTube Chat! Here are all those Livestreams showing the creation: <https://www.youtube.com/watch?v=IkMCtkDIhe8&list=PLc7fktTRMBowNaBTsDHlL6X3P3ViX3tYg>
+
+Many Thanks goes to Chris Titus for creating major parts of this script and making it available to everyone. Check out his work from the link above.
