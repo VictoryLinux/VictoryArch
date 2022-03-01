@@ -21,7 +21,7 @@ reboot
 enter tty
 
 cd VictoryArch
-./victoryarch.sh 
+./victory.sh
 ```
 
 ### System Description
