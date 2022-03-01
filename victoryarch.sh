@@ -197,6 +197,13 @@ pacman -Sy --noconfirm
 echo -e "\nInstalling Base System\n"
 
 PKGS=(
+'mesa' # Essential Xorg First
+'xorg'
+'xorg-server'
+'xorg-apps'
+'xorg-drivers'
+'xorg-xkill'
+'xorg-xinit'
 'alacarte'
 'ark' # compression
 'autoconf' # build
