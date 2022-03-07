@@ -309,6 +309,7 @@ PKGS=(
 'unrar'
 'unzip'
 'usbutils'
+'vino'
 'variety'
 'virtualbox'
 'virtualbox-host-modules-arch'
