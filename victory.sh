@@ -297,6 +297,7 @@ PKGS=(
 'smbnetfs'
 'gvfs-smb'
 'python-pysmbc'
+'remmina'
 'snapper'
 'starship'
 'sudo'
