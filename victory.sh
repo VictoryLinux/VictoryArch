@@ -371,6 +371,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerleve
 'pamac-all'
 'papirus-icon-theme'
 'popsicle-git'
+'polychromatic'
 'plymouth'
 'ocs-url' # install packages from websites
 'onlyoffice-bin'
