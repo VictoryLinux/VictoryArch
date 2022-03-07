@@ -247,6 +247,7 @@ PKGS=(
 'gst-libav'
 'gst-plugins-good'
 'gst-plugins-ugly'
+'gufw'
 'gwenview'
 'haveged'
 'htop'
@@ -392,12 +393,13 @@ done
 
 # Install Flatpaks
 function flatpaks() {
-	sudo flatpak install flathub com.simplenote.Simplenote -y
-	sudo flatpak install flathub com.vscodium.codium -y
+    sudo flatpak install flathub com.simplenote.Simplenote -y
+    sudo flatpak install flathub com.vscodium.codium -y
     sudo flatpak install flathub com.mattjakeman.ExtensionManager -y
     sudo flatpak install flathub com.discordapp.Discord -y
     sudo flatpak install flathub com.bitwarden.desktop -y
     sudo flatpak install flathub nl.hjdskes.gcolor3 -y
+    sudo flatpak install flathub com.usebottles.bottles
 
     check_exit_status
 }
