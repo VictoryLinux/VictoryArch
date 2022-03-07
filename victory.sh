@@ -375,6 +375,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerleve
 'ocs-url' # install packages from websites
 'onlyoffice-bin'
 'openrgb'
+'openrazer-meta'
 'snap-pac'
 'stacer-bin'
 'timeshift'
