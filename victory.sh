@@ -404,7 +404,7 @@ function flatpaks() {
     sudo flatpak install flathub com.discordapp.Discord -y
     sudo flatpak install flathub com.bitwarden.desktop -y
     sudo flatpak install flathub nl.hjdskes.gcolor3 -y
-    sudo flatpak install flathub com.usebottles.bottles
+    sudo flatpak install flathub com.usebottles.bottles -y
 
     check_exit_status
 }
