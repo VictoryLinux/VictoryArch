@@ -385,6 +385,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $HOME/powerleve
 'ttf-hack'
 'ttf-meslo' # Nerdfont package
 'ttf-roboto'
+'update-grub'
 'xcursor-breeze'
 'zoom' # video conferences
 )
