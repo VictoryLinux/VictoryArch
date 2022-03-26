@@ -270,6 +270,7 @@ PKGS=(
 'milou'
 'mtools'
 'nano'
+'ncdu'
 'neofetch'
 'networkmanager'
 'ntfs-3g'
